@@ -105,23 +105,23 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-def add_bg_from_local(image_path):
-    with open(image_path, "rb") as image_file:
-        encoded_string = base64.b64encode(image_file.read()).decode()
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("data:image/png;base64,{encoded_string}");
-            background-attachment: fixed;
-            background-size: cover;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+# def add_bg_from_local(image_path):
+#     with open(image_path, "rb") as image_file:
+#         encoded_string = base64.b64encode(image_file.read()).decode()
+#     st.markdown(
+#         f"""
+#         <style>
+#         .stApp {{
+#             background-image: url("data:image/png;base64,{encoded_string}");
+#             background-attachment: fixed;
+#             background-size: cover;
+#         }}
+#         </style>
+#         """,
+#         unsafe_allow_html=True
+#     )
 
-add_bg_from_local("E:\web scrapping\Basics\project\lata_project\wallpapersden.com_cybersecurity-core_1927x1080.jpg")
+# add_bg_from_local("E:\web scrapping\Basics\project\lata_project\wallpapersden.com_cybersecurity-core_1927x1080.jpg")
 
 st.markdown(
     """
